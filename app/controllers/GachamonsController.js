@@ -24,6 +24,18 @@ function _drawActiveGachamon() {
   setHTML('activeGachamonDetails', gachamon.ActiveGachamonHTMLTemplate)
 }
 
+function _drawMyGachamons() {
+  const myGachamons = AppState.myGachamons
+  console.log('my gachamons', myGachamons);
+
+
+  let htmlString = ''
+
+  myGachamons.forEach(gachamon => htmlString += gachamon.GachamonCatalogHTMLTemplate)
+
+  setHTML('myGachamons', htmlString)
+}
+
 // !SECTION
 
 export class GachamonsController {
@@ -32,6 +44,7 @@ export class GachamonsController {
     _drawGachamons()
 
     AppState.on('activeGachamon', _drawActiveGachamon)
+    AppState.on('myGachamons', _drawMyGachamons)
   }
 
   // SECTION public

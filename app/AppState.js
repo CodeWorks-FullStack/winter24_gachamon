@@ -7,7 +7,12 @@ class ObservableAppState extends EventEmitter {
 
   gachamons = [
     new Gachamon({ name: 'Doctor Alligator', emoji: '🐊', rarity: 'common' }),
-    new Gachamon({ name: 'Larry', emoji: '🦆', rarity: 'uncommon' })
+    new Gachamon({ name: 'Larry', emoji: '🦆', rarity: 'uncommon' }),
+    new Gachamon({ name: 'Tiger', emoji: '🐅', rarity: 'common' }),
+    new Gachamon({ name: 'Oslo', emoji: '🦧', rarity: 'common' }),
+    new Gachamon({ name: 'Mick', emoji: '🐏', rarity: 'ultra rare' }),
+    new Gachamon({ name: 'Jake', emoji: '🐍', rarity: 'common' }),
+
   ]
 }
 

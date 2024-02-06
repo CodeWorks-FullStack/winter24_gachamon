@@ -16,6 +16,8 @@ export class CoinsController {
     console.log('Coins Controller loaded! 🪙');
   }
 
+  // SECTION public
+
   addCoin() {
     console.log('Adding coin in the controller');
     coinsService.addCoin()
@@ -23,4 +25,6 @@ export class CoinsController {
 
   }
 
+
+  // !SECTION
 }

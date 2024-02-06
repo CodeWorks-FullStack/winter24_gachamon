@@ -11,11 +11,11 @@ export class Gachamon {
     this.rarity = data.rarity
   }
 
-  get gachamonCatalogHTMLTemplate() {
+  get GachamonCatalogHTMLTemplate() {
     return `
     <div class="col-2 text-center">
-      <p role="button" class="display-2 mb-0" title="My name is Larry">
-        🦆
+      <p role="button" class="display-2 mb-0" title="My name is ${this.name}">
+        ${this.emoji}
       </p>
     </div>
     `

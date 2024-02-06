@@ -3,7 +3,6 @@ import { AppState } from "../AppState.js";
 class CoinsService {
   addCoin() {
     console.log('Adding coin, but in the service');
-
     // REVIEW makes a new value in memory, because coins is a primitive
     // let coins = AppState.coins
 

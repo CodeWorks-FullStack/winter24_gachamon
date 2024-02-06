@@ -22,4 +22,14 @@ export class GachamonsController {
     console.log('Gachamons controller loaded');
     _drawGachamons()
   }
+
+  // SECTION public
+  setActiveGachamon(gachamonName) {
+    console.log('setting active gachamon', gachamonName);
+
+  }
+
+
+
+  // !SECTION
 }

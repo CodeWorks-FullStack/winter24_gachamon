@@ -20,6 +20,7 @@ export class CoinsController {
     console.log('Adding coin in the controller');
     coinsService.addCoin()
     _drawCoins()
+
   }
 
 }

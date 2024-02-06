@@ -14,6 +14,8 @@ class ObservableAppState extends EventEmitter {
     new Gachamon({ name: 'Jake', emoji: '🐍', rarity: 'common' }),
   ]
 
+  // NOTE just for intellisense
+  /** @type {Gachamon | null} */
   activeGachamon = null
 }
 

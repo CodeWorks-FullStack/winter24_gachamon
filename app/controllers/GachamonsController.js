@@ -16,6 +16,14 @@ function _drawGachamons() {
   setHTML('gachamonsCatalog', htmlString)
 }
 
+function _drawActiveGachamon() {
+  const gachamon = AppState.activeGachamon
+
+  console.log('drawing active gachamon', gachamon);
+
+  setHTML('activeGachamonDetails', gachamon.ActiveGachamonHTMLTemplate)
+}
+
 // !SECTION
 
 export class GachamonsController {
@@ -28,6 +36,7 @@ export class GachamonsController {
   setActiveGachamon(gachamonName) {
     console.log('setting active gachamon', gachamonName);
     gachamonsService.setActiveGachamon(gachamonName)
+    _drawActiveGachamon()
   }
 
 

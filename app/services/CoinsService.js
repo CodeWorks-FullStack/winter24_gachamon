@@ -10,6 +10,7 @@ class CoinsService {
     // manipulate the value stored in the object directly
     AppState.coins++
     console.log('coins in appstate', AppState.coins);
+
   }
 }
 

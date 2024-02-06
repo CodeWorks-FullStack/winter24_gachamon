@@ -7,6 +7,9 @@ class GachamonsService {
     const foundGachamon = AppState.gachamons.find(gachamon => gachamon.name == gachamonName)
 
     console.log('gachamon:', foundGachamon);
+
+    AppState.activeGachamon = foundGachamon
+
   }
 }
 

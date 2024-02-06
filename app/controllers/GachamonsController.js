@@ -39,6 +39,10 @@ export class GachamonsController {
     _drawActiveGachamon()
   }
 
+  purchaseRandomGachamon() {
+    console.log('purchasing random gachamon');
+  }
+
 
 
   // !SECTION

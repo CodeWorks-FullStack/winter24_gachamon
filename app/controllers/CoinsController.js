@@ -14,6 +14,9 @@ export class CoinsController {
 
   constructor () {
     console.log('Coins Controller loaded! 🪙');
+
+    // NOTE attaches listener to property in the appstate, and runs callback function when that value changes
+    AppState.on('coins', _drawCoins)
   }
 
   // SECTION public
@@ -21,7 +24,7 @@ export class CoinsController {
   addCoin() {
     console.log('Adding coin in the controller');
     coinsService.addCoin()
-    _drawCoins()
+    // _drawCoins()
 
   }
 

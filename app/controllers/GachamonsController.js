@@ -41,6 +41,9 @@ export class GachamonsController {
 
   purchaseRandomGachamon() {
     console.log('purchasing random gachamon');
+
+    gachamonsService.purchaseRandomGachamon()
+
   }
 
 

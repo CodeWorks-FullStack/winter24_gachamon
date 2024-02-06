@@ -30,13 +30,15 @@ export class GachamonsController {
   constructor () {
     console.log('Gachamons controller loaded');
     _drawGachamons()
+
+    AppState.on('activeGachamon', _drawActiveGachamon)
   }
 
   // SECTION public
   setActiveGachamon(gachamonName) {
     console.log('setting active gachamon', gachamonName);
     gachamonsService.setActiveGachamon(gachamonName)
-    _drawActiveGachamon()
+    // _drawActiveGachamon()
   }
 
   purchaseRandomGachamon() {

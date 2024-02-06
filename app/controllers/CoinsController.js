@@ -6,6 +6,6 @@ export class CoinsController {
   }
 
   addCoin() {
-    console.log('Adding coin');
+    console.log('Adding coin in the controller');
   }
 }

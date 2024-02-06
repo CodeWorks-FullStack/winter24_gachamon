@@ -25,9 +25,9 @@ export class Gachamon {
     return `
     <div class="col-8 m-auto">
       <div class="border border-1 border-dark bg-light shadow text-center p-3 m-3">
-        <p class="display-1">🐊</p>
-        <p class="fs-1">Doctor Alligator</p>
-        <p class="fs-1">Rarity: Common</p>
+        <p class="display-1">${this.emoji}</p>
+        <p class="fs-1">${this.name}</p>
+        <p class="fs-1">Rarity: ${this.rarity}</p>
       </div>
     </div>
     `

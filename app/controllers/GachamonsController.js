@@ -2,6 +2,7 @@
 // SECTION PRIVATE
 
 import { AppState } from "../AppState.js";
+import { gachamonsService } from "../services/GachamonsService.js";
 import { setHTML } from "../utils/Writer.js";
 
 function _drawGachamons() {
@@ -26,7 +27,7 @@ export class GachamonsController {
   // SECTION public
   setActiveGachamon(gachamonName) {
     console.log('setting active gachamon', gachamonName);
-
+    gachamonsService.setActiveGachamon(gachamonName)
   }
 
 

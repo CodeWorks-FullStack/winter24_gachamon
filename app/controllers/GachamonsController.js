@@ -40,9 +40,11 @@ function _drawMyGachamons() {
 
 export class GachamonsController {
   constructor () {
+    // NOTE page load
     console.log('Gachamons controller loaded');
     _drawGachamons()
 
+    // NOTE listeners (guy sitting on chair staring at appstate)
     AppState.on('activeGachamon', _drawActiveGachamon)
     AppState.on('myGachamons', _drawMyGachamons)
   }

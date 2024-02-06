@@ -13,9 +13,11 @@ function _drawCoins() {
 export class CoinsController {
 
   constructor () {
+    // NOTE page load
     console.log('Coins Controller loaded! 🪙');
 
     // NOTE attaches listener to property in the appstate, and runs callback function when that value changes
+    // NOTE listeners (guy sitting on chair staring at appstate)
     AppState.on('coins', _drawCoins)
   }
 

@@ -20,6 +20,18 @@ export class Gachamon {
     </div>
     `
   }
+
+  get ActiveGachamonHTMLTemplate() {
+    return `
+    <div class="col-8 m-auto">
+      <div class="border border-1 border-dark bg-light shadow text-center p-3 m-3">
+        <p class="display-1">🐊</p>
+        <p class="fs-1">Doctor Alligator</p>
+        <p class="fs-1">Rarity: Common</p>
+      </div>
+    </div>
+    `
+  }
 }
 
 

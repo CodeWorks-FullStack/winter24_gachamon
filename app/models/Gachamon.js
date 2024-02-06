@@ -10,6 +10,16 @@ export class Gachamon {
     this.emoji = data.emoji
     this.rarity = data.rarity
   }
+
+  get gachamonCatalogHTMLTemplate() {
+    return `
+    <div class="col-2 text-center">
+      <p role="button" class="display-2 mb-0" title="My name is Larry">
+        🦆
+      </p>
+    </div>
+    `
+  }
 }
 
 
